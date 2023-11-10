@@ -3,11 +3,43 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="cont">
-  <h1>asd</h1>
+  <div>
+    <h2>Would you like to contact me? Here are some ways to do so:</h2>
+    <img src="https://skillicons.dev/icons?i=discord" /><h1>_wiczka</h1>
+    <img src="https://skillicons.dev/icons?i=instagram" /><h1>@wikakozinka</h1>
+    <img src="https://skillicons.dev/icons?i=github" /><h1>/xvmari</h1>
+    <img src="https://skillicons.dev/icons?i=twitter" /><h1>wiczkalelele</h1>
+  </div>
 </Layout>
 <style>
+  h2 {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+    font-size: 2rem;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 30px #ff00de,
+      0 0 50px #ff00de,
+      0 0 60px #ff00de,
+      0 0 100px #ff00de;
+  }
+  div {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
   h1 {
-    box-sizing: border-box;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 7px 8px #000000;
+  }
+  img {
+    width: 4vw;
+    height: 4vw;
   }
 </style>
