@@ -2,12 +2,60 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="asd">
-  <h1>asd</h1>
+<Layout title="hom">
+  <div>
+    <h1>Hellow, my name is Wiktoria</h1>
+    <img src="/hih.png" alt="me frfr" />
+    <p>dis me frfr</p>
+  </div>
+  <h1>I'm 17 years old from Poland</h1>
+  <h1>Hello Kitty enjoyer who likes to write stupid things</h1>
+
+  <p>go and check out other things bout me</p>
 </Layout>
 <style>
   h1 {
     box-sizing: border-box;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+  }
+  div,
+  p {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #fff,
+      0 0 40px #ff00de,
+      0 0 70px #ff00de,
+      0 0 80px #ff00de,
+      0 0 100px #ff00de,
+      0 0 150px #ff00de;
+  }
+
+  img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+  }
+  img:hover {
+    box-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #ff00de,
+      0 0 50px #ff00de,
+      0 0 50px #ff00de,
+      0 0 60px #ff00de,
+      0 0 100px #ff00de;
+    transition: 0.5s;
   }
 </style>
