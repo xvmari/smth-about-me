@@ -1,11 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const data = await fetch("https://api.github.com/users/xvmari").then((res) =>
+  res.json(),
+);
 ---
 
 <Layout title="hom">
   <div>
     <h1>Hellow, my name is Wiktoria</h1>
-    <img src="/hih.png" alt="me frfr" />
+    <img src={data.avatar_url} alt="me frfr" />
     <p>dis me frfr</p>
   </div>
   <h1>I'm 17 years old from Poland</h1>
@@ -34,29 +38,22 @@ import Layout from "../layouts/Layout.astro";
     text-shadow:
       0 0 10px #fff,
       0 0 20px #fff,
-      0 0 30px #fff,
       0 0 40px #ff00de,
       0 0 70px #ff00de,
-      0 0 80px #ff00de,
-      0 0 100px #ff00de,
-      0 0 150px #ff00de;
+      0 0 80px #ff00de;
   }
 
   img {
     width: 12vw;
     height: 12vw;
     border-radius: 50%;
+    transition: 0.5s;
   }
   img:hover {
     box-shadow:
       0 0 5px #fff,
       0 0 10px #fff,
-      0 0 20px #fff,
       0 0 30px #ff00de,
-      0 0 50px #ff00de,
-      0 0 50px #ff00de,
-      0 0 60px #ff00de,
-      0 0 100px #ff00de;
-    transition: 0.5s;
+      0 0 50px #ff00de;
   }
 </style>
